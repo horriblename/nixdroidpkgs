@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1729880355,
-        "narHash": "sha256-RP+OQ6koQQLX5nw0NmcDrzvGL8HDLnyXt/jHhL1jwjM=",
+        "lastModified": 1746663147,
+        "narHash": "sha256-Ua0drDHawlzNqJnclTJGf87dBmaO/tn7iZ+TCkTRpRc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "18536bf04cd71abd345f9579158841376fdd0c5a",
+        "rev": "dda3dcd3fe03e991015e9a74b22d35950f264a54",
         "type": "github"
       },
       "original": {
@@ -42,11 +42,11 @@
     "termux-packages": {
       "flake": false,
       "locked": {
-        "lastModified": 1730118209,
-        "narHash": "sha256-NHOyEMSi0Oht/PwwspSZAy8rpDxU4nC6rw/OgULlQ0A=",
+        "lastModified": 1746793234,
+        "narHash": "sha256-iel8GPpNNwtj/XWxvD/Wx2+v8H5IU85Tx1pYKpJe4B4=",
         "owner": "termux",
         "repo": "termux-packages",
-        "rev": "ad5a441bd5624b88582a2de715b8428d68413db3",
+        "rev": "bb381b573d55b379943a8129ed29f2599d73cb44",
         "type": "github"
       },
       "original": {
