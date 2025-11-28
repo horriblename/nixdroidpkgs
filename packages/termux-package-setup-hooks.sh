@@ -7,7 +7,6 @@ TERMUX_PREFIX_CLASSICAL="${TERMUX_BASE_DIR}/usr"
 TERMUX_PREFIX="${TERMUX_PREFIX_CLASSICAL}"
 
 termux_step_patch_package() {
-	shopt -s nullglob
 	for patch in $termuxPatches; do
 		echo "Applying patch: $(basename $patch)"
 		test -f "$patch" && sed \
@@ -19,7 +18,6 @@ termux_step_patch_package() {
 			-e "s%\@TERMUX_PREFIX_CLASSICAL\@%${TERMUX_PREFIX_CLASSICAL}%g" \
 			"$patch" | patch --silent -p1
 	done
-	shopt -u nullglob
 }
 
 preConfigurePhases+=(termux_step_patch_package)
