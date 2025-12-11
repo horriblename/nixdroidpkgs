@@ -28,10 +28,11 @@ openssh.overrideAttrs (old: {
     "${termuxPkg}/sftp-server.c.patch"
     "${termuxPkg}/ssh-agent.c.patch"
     "${termuxPkg}/ssh_config.patch"
+    "${termuxPkg}/sshd.8.patch"
+    "${termuxPkg}/sshd-auth.c.patch"
     "${termuxPkg}/sshd_config.5.patch"
     "${termuxPkg}/sshd_config.patch"
-    # original doesn't apply so I'm cutting the problematic hunk xd
-    ./sshd.c.patch
+    "${termuxPkg}/sshd.c.patch"
     "${termuxPkg}/sshd-session.c.patch"
     "${termuxPkg}/ssh-keygen.c.patch"
     "${termuxPkg}/sshpty.c.patch"
