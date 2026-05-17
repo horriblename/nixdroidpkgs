@@ -10,6 +10,7 @@ openssh.overrideAttrs (old: {
   buildInputs = old.buildInputs ++ [termux-auth];
 
   termuxPatches = [
+    "${termuxPkg}/0001-scp-only-clear-special-bits-for-non-android.patch"
     "${termuxPkg}/auth.c.patch"
     "${termuxPkg}/auth-passwd.c.patch"
     "${termuxPkg}/contrib_ssh-copy-id.patch"
