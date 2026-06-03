@@ -1,7 +1,7 @@
 {
   description = "Termux packages and patches ported to nix-on-droid";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     termux-auth.url = "github:termux/termux-auth";
     termux-auth.flake = false;
     termux-packages.url = "github:termux/termux-packages";
