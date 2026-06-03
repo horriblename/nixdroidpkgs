@@ -20,7 +20,7 @@ termux_step_patch_package() {
 	done
 }
 
-preConfigurePhases+=(termux_step_patch_package)
+appendToVar preConfigurePhases termux_step_patch_package
 
 appendToVar NIX_CFLAGS_COMPILE "-D__ANDROID__"
 appendToVar NIX_CFLAGS_COMPILE "-D__TERMUX__" # should probably be part of termux-auth?
